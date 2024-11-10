@@ -1,0 +1,20 @@
+INFO:seleniumwire.storage:Using default request storage
+INFO:seleniumwire.backend:Created proxy listening on 127.0.0.1:49710
+INFO:root:Bot started
+INFO:root:Stock Created: NVDA
+INFO:root:Logged in
+INFO:root:Dashboard Loaded
+ERROR:root:Stocks Error: []
+INFO:root:Predicting Prices
+INFO:root:Analyzing Stock
+INFO:root:Predicted Closing: 137.30911254882812
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 5, Price: 147.63, Worth: 738.15
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:{'NVDA': {'quantity': 45, 'count': 590.52, 'worth': 6643.35}}
+INFO:root:Current Price: 147.7
+INFO:root:Selling Stocks
+INFO:root:Quantity: 20, Symbol: NVDA, Transaction Type: SELL
+ERROR:root:'>' not supported between instances of 'float' and 'datetime.time'
+INFO:root:Bot Closed
