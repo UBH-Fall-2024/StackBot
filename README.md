@@ -1,5 +1,5 @@
 <div align="left" style="position: relative;">
-<img src="https://drive.google.com/file/d/1xRtvA3q9b67tbidYhhav9nY5rpiHyxdH/view?usp=sharing" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<img src="https://ibb.co/kmJc4Fm" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>STACKBOT.GIT</h1>
 <p align="left">
 	<em><code>❯ REPLACE-ME</code></em>
