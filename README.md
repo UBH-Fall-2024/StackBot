@@ -253,6 +253,15 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## 🙌 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+I would like to express my gratitude to everyone who contributed to the development of this Stock Trading Simulator.
+
+- Mentors and Professors: Thank you for sharing your knowledge and insights, which helped shape the foundational concepts behind this project.
+- Open Source Community: I am grateful to the developers and contributors of the open-source libraries and APIs used in this project. Your work provided essential tools and - resources that made the creation of this simulator possible.
+- Friends and Family: Your encouragement and support kept me motivated throughout the development process.
+- Testers and Early Users: Thank you for your feedback, which was invaluable in improving the simulator’s functionality and user experience.
+
+This project is a result of collaborative learning and shared resources, and I am grateful for the guidance, inspiration, and support received from this wonderful community.
+
+
 
 ---
