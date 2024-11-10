@@ -2,14 +2,9 @@
 <img src="https://i.ibb.co/HhCgtQh/logo-up.png" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>STACKBOT.GIT</h1>
 <p align="left">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em>Robot ❌ Automation with AI✅</em>
 </p>
-<p align="left">
-	<img src="https://img.shields.io/github/license/UBH-Fall-2024/StackBot.git?style=flat&logo=opensourceinitiative&logoColor=white&color=4b6277" alt="license">
-	<img src="https://img.shields.io/github/last-commit/UBH-Fall-2024/StackBot.git?style=flat&logo=git&logoColor=white&color=4b6277" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/UBH-Fall-2024/StackBot.git?style=flat&color=4b6277" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/UBH-Fall-2024/StackBot.git?style=flat&color=4b6277" alt="repo-language-count">
-</p>
+
 <p align="left">Built with the tools and technologies:</p>
 <p align="left">
 	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
@@ -37,13 +32,24 @@
 
 ## 📍 Overview
 
-<code>❯ REPLACE-ME</code>
+<p>The Stock Trading Simulator is a web-based application that enables users to simulate stock trading in a realistic yet risk-free environment. Using virtual currency, users can buy and sell stocks based on historical market data, allowing them to practice trading strategies without any financial risk. This simulator provides an ideal platform for beginners to learn stock trading basics and for experienced traders to test strategies under real-world market conditions.</p>
+
+<p>The market data is simulated with a slight delay, allowing users to experience the influence of market trends and learn to make informed decisions over time. The simulator also includes a user-friendly interface for managing portfolios, viewing historical performance, and analyzing market trends to enhance the learning experience.
+
+</p>
 
 ---
 
 ## 👾 Features
 
-<code>❯ REPLACE-ME</code>
+<ul>
+	<li>Virtual Currency: Users start with a fixed amount of virtual money to trade stocks without real financial risk.</li>
+<li>Simulated Market Data: Stock prices follow real market data with a delay, providing an authentic trading experience.</li>
+<li>Portfolio Management: Users can view their current holdings, track profits and losses, and manage trades.</li>
+<li>Historical Data Visualization: Visual representations of stock trends to help users make informed decisions.</li>
+<li>Educational Insights: Tips and insights on market behavior to assist users in understanding the stock market.
+</li>
+</ul>
 
 ---
 
