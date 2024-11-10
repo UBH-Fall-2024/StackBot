@@ -1,0 +1,55 @@
+INFO:seleniumwire.storage:Using default request storage
+INFO:seleniumwire.backend:Created proxy listening on 127.0.0.1:52122
+INFO:root:Bot started
+INFO:root:Stock Created: GOOGL
+INFO:root:Logged in
+INFO:root:Dashboard Loaded
+ERROR:root:Stocks Error: []
+INFO:root:Predicting Prices
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 5, Price: 147.63, Worth: 738.15
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:{'quantity': 0, 'count': 0, 'worth': 0, 'NVDA': {'quantity': 105, 'count': 1033.4099999999999, 'worth': 15501.150000000001}}
+INFO:root:Buying Stocks
+INFO:root:Quantity: 30, Symbol: GOOGL, Transaction Type: BUY
+INFO:root:Stocks Purchased
+INFO:root:Analyzing Stock
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 5, Price: 147.63, Worth: 738.15
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: GOOGL, Quantity: 30, Price: 178.35, Worth: 5350.5
+INFO:root:{'quantity': 0, 'count': 0, 'worth': 0, 'NVDA': {'quantity': 210, 'count': 2066.8200000000006, 'worth': 31002.299999999996}, 'GOOGL': {'quantity': 30, 'count': 178.35, 'worth': 5350.5}}
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 5, Price: 147.63, Worth: 738.15
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: GOOGL, Quantity: 30, Price: 178.35, Worth: 5350.5
+INFO:root:{'quantity': 0, 'count': 0, 'worth': 0, 'NVDA': {'quantity': 315, 'count': 3100.2300000000014, 'worth': 46503.44999999999}, 'GOOGL': {'quantity': 60, 'count': 356.7, 'worth': 10701.0}}
+INFO:root:Selling all stocks instead of (10701.0, 60) for GOOGL
+INFO:root:Selling Stocks
+INFO:root:Quantity: (10701.0, 60), Symbol: GOOGL, Transaction Type: SELL
+INFO:root:Stocks Purchased
+INFO:root:Predicted Closing: 174.60958862304688
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 10, Price: 147.63, Worth: 1476.3
+INFO:root:Stock: NVDA, Quantity: 5, Price: 147.63, Worth: 738.15
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: NVDA, Quantity: 20, Price: 147.63, Worth: 2952.6
+INFO:root:Stock: GOOGL, Quantity: 30, Price: 178.35, Worth: 5350.5
+INFO:root:{'quantity': 0, 'count': 0, 'worth': 0, 'NVDA': {'quantity': 420, 'count': 4133.640000000002, 'worth': 62004.59999999999}, 'GOOGL': {'quantity': 90, 'count': 535.05, 'worth': 16051.5}}
+INFO:root:Current Price: 178.44
+ERROR:root:invalid index to scalar variable.
+INFO:root:Bot Closed

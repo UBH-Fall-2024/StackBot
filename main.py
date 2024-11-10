@@ -18,19 +18,17 @@ import pytz
 import time as tp
 from requests.structures import CaseInsensitiveDict
 import json
-from selenium.common import exceptions
-
-
-if os.path.exists("bot.log"):
-    os.remove("bot.log")
-
-logging.basicConfig(filename='bot.log', level=logging.INFO)
 
 dotenv.load_dotenv()
 
 
 class StockManager:
     def __init__(self, stock="NVDA"):
+        filename = f"logs/{stock}.log"
+        if os.path.exists(filename):
+            os.remove(filename)
+
+        logging.basicConfig(filename=filename, level=logging.INFO)
         self.stock = stock
         self.errors = []
         self.pending_stocks = {
@@ -334,9 +332,8 @@ class StockManager:
 
 
 if __name__ == "__main__":
-
     async def main():
-        stock = StockManager()
+        stock = StockManager("GOOGL")
         try:
             logging.info("Bot started")
             logging.info("Stock Created: " + stock.stock)
@@ -351,7 +348,9 @@ if __name__ == "__main__":
                 "Stocks Error: " + str(stock.errors)
             )
             logging.info("Predicting Prices")
+            stock.placeOrder(30, "BUY")
             logging.info("Analyzing Stock")
+            stock.placeOrder(4, "SELL")
             stock.analyze_stock()
         except Exception as e:
             logging.error(e)

@@ -1,23 +1,44 @@
 from multiprocessing import Pool
 import os
 import time
+from main import StockManager
+import asyncio
+import logging
 
-def worker(job_id):
-    time.sleep(1)  # Simulating some work
-    return f"Job {job_id} done by PID: {os.getpid()}"
+stocks = ["NVDA, MSFT"]
 
-def collect_result(result):
-    print(f"Collected result: {result}")
+
+def worker(stock_name):
+    time.sleep(1)
+
+    async def main():
+        stock = StockManager(stock_name)
+        try:
+            # stock.login()
+            stock.get_current_price()
+            stock.get_stock_worth()
+            stock.analyze_stock()
+        except Exception as e:
+            print(stock.errors)
+        finally:
+            stock.close()
+
+    asyncio.run(main())
+
 
 if __name__ == "__main__":
-    with Pool(processes=4) as pool:
+    with Pool(processes=2) as pool:
         results = []
-        for i in range(10):
-            result = pool.apply_async(worker, args=(i,), callback=collect_result)
+        for i in range(len(stocks)):
+            result = pool.apply_async(worker, args=(stocks[i],))
             results.append(result)
-        
-        # Wait for all asynchronous tasks to complete
+        pool.close()
+        pool.join()
+        print("All jobs started")
         for result in results:
-            result.wait()
-    
+
+            print("Job completed")
+            print("Finished job", os.getpid())
+            time.sleep(1)  # Sleep for 1 second to avoid overloading the API
+
     print("All jobs completed")
