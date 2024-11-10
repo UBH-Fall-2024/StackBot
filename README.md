@@ -1,5 +1,5 @@
 <div align="left" style="position: relative;">
-<img src="https://i.ibb.co/HhCgtQh/logo-up.png" align="right" width="20%" style="margin: -40px 0 0 20px; border: 2px solid black; border-radius: 200px;">
+<img src="https://i.ibb.co/HhCgtQh/logo-up.png" align="right" width="20%" style="margin: -40px 0 0 20px; border: 2px solid black; border-radius: 200px; overflow: hidden">
 <h1>STACKBOT.GIT</h1>
 <p align="left">
 	<em>Robot ❌ Automation with AI✅</em>
