@@ -195,9 +195,10 @@ Run the test suite using the following command:
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [X] **`Task 1`**: <strike>Implemented Simulator Basic Functionality</strike>
+- [X] **`Task 2`**: <strike>Developed AI Model to Predict Data.</strike>
+- [ ] **`Task 3`**: Managing Multiple Stocks at Once.
+- [ ] **`Task 4`**: Implementing Advance Conditions for Smoother UX.
 
 ---
 
@@ -233,14 +234,6 @@ Run the test suite using the following command:
 </details>
 
 <details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/UBH-Fall-2024/StackBot.git/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=UBH-Fall-2024/StackBot.git">
-   </a>
-</p>
-</details>
 
 ---
 
