@@ -1,5 +1,5 @@
 <div align="left" style="position: relative;">
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopea.org%2Fen%2Fproduct%2Fgold-trading-ai-mt4%2F&psig=AOvVaw3YGAFJhNMUyiM29mvCzh80&ust=1731343386399000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjFqoub0okDFQAAAAAdAAAAABAE" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<img src="https://drive.google.com/file/d/1xRtvA3q9b67tbidYhhav9nY5rpiHyxdH/view?usp=sharing" align="right" width="30%" style="margin: -20px 0 0 20px;">
 <h1>STACKBOT.GIT</h1>
 <p align="left">
 	<em><code>❯ REPLACE-ME</code></em>
