@@ -33,7 +33,11 @@ class StockManager:
     def __init__(self, stock="NVDA"):
         self.stock = stock
         self.errors = []
-        self.pending_stocks = {}
+        self.pending_stocks = {
+            "quantity": 0,
+            "count": 0,
+            "worth": 0
+        }
         self.predicted_closing = None
         market_tz = pytz.timezone('America/New_York')
         self.market_open = market_tz.localize(
@@ -109,7 +113,7 @@ class StockManager:
     def analyze_stock(self, limit=10000):
         self.keep_a_watch()
         while True:
-            if datetime.now() > time(16, 0):
+            if datetime.now().time() > time(16, 0):
                 break
             self.analyze_stock(limit)
             tp.sleep(60)
@@ -131,7 +135,7 @@ class StockManager:
                     continue
                 self.placeOrder(min(count, 20), "SELL")
 
-            if tp.time() > time(14, 0):
+            if datetime.now().time() > time(14, 0):
                 if self.predicted_closing - self.curr_price > 5:
                     continue
                 else:
@@ -260,7 +264,14 @@ class StockManager:
 
         return response.json()
 
-    def placeOrder(self, quantity=1, transactionType="BUY"):
+    def placeOrder(self, quantity=2, transactionType="BUY"):
+        self.get_all_pending_stocks_data()
+        if (transactionType == "SELL"):
+            if (quantity > self.pending_stocks["quantity"]):
+                quantity = self.get_stock_worth()
+                logging.info(
+                    f"Selling all stocks instead of {quantity} for {self.stock}")
+
         body = {
             "operationName": "StockTrade",
             "variables": {
@@ -291,11 +302,12 @@ class StockManager:
                 f"Failed to place order for {self.stock}. Status code: {response.status_code}")
             return None
 
+        logging.info("Stocks Purchased")
         return response.json()
 
     def predict_prices(self):
-        # if (self.predicted_closing):
-        #     return self.predicted_closing["predicted_closure"]
+        if (self.predicted_closing):
+            return self.predicted_closing["predicted_closure"]
         response = api_class.getData(ticker=self.stock)
         df = response[0]
         fn = response[1]

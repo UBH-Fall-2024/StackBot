@@ -1,3 +1,5 @@
+import datetime
+import api_class
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
@@ -41,8 +43,25 @@ class StockPricePredictor:
     def fit(self, data):
         """Fits the model on the provided data."""
         X_scaled, y_scaled = self.preprocess_data(data)
-        self.model.fit(X_scaled, y_scaled, epochs=self.epochs,
-                       batch_size=self.batch_size)
+        # self.model.fit(X_scaled, y_scaled, epochs=self.epochs,
+        #                batch_size=self.batch_size)
+        # Dictionary to store models and their losses
+        self.model_history = {}
+
+        # Fit the model and store each epoch's model and loss
+        for epoch in range(self.epochs):
+            history = self.model.fit(X_scaled, y_scaled, epochs=epoch+1,
+                                     batch_size=self.batch_size, verbose=0)
+            loss = history.history['loss'][0]
+            self.model_history[epoch] = {
+                'model': self.model.get_weights(), 'loss': loss}
+
+        # Find the epoch with the lowest loss
+        best_epoch = min(self.model_history,
+                         key=lambda x: self.model_history[x]['loss'])
+
+        # Load the best model
+        self.model.set_weights(self.model_history[best_epoch]['model'])
 
     def predict(self, new_sample):
         """Predicts the close price for a new sample."""
